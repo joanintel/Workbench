@@ -1,8 +1,8 @@
 /* Service worker (optional PWA step). Caches the app so it opens offline.
    When you change any file, bump VERSION so users get the update. */
-const VERSION = 'workbench-v1';
+const VERSION = 'workbench-v2';
 const FILES = [
-  './', 'index.html', 'style.css', 'app.js',
+  './', 'index.html', 'style.css', 'theme.css', 'app.js',
   'tools/voice-changer.js',
   'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png'
 ];
