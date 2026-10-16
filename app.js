@@ -42,7 +42,7 @@
   function renderHome() {
     app.innerHTML =
       '<section class="hero"><h1>Small tools that just work.</h1>' +
-      '<p>Everything runs in your browser. Nothing you record or upload leaves your device.</p></section>' +
+      '<p>Everything runs in your browser. Nothing you record or upload leaves your device. </br><hr> Desing By Joan</p></section>' +
       categories.map(c =>
         '<section class="cat"><h2>' + c.name + (c.tools.length ? '' : '<small>coming soon</small>') + '</h2>' +
         '<div class="tools">' +
