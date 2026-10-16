@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Workbench: small tools that run in your browser</title>
+<meta name="description" content="Small browser tools that run on your device. Nothing you record or upload leaves it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- PWA (optional): uncomment these two lines when you are ready to make it installable -->
+<!-- <link rel="manifest" href="manifest.webmanifest"> -->
+<!-- <meta name="theme-color" content="#1B1F3B"> -->
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#/"><span></span>Workbench</a>
+    <div class="crumbs" id="crumbs"></div>
+  </header>
+  <main id="app"></main>
+</div>
+
+<!-- 1. The framework (must come first) -->
+<script src="app.js"></script>
+
+<!-- 2. One line per tool. To add a tool: create tools/your-tool.js and add a line here. -->
+<script src="tools/voice-changer.js"></script>
+
+<!-- PWA (optional): uncomment to enable offline use and install -->
+<!--
+<script>
+  if ('serviceWorker' in navigator) {
+    addEventListener('load', () => navigator.serviceWorker.register('sw.js'));
+  }
+</script>
+-->
+</body>
+</html>
